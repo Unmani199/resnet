@@ -1,5 +1,8 @@
 # Network-Resilience
-The 2 functions measure and plot resilience of the given network using a modified Shannon diversity index that as demonstrated in [(Zitnik et al., 2019)](https://github.com/Unmani199/Network-Resilience/files/11356259/Evolution_of_PPIN_across_tree_of_life.pdf)
+The 2 functions measure and plot resilience of the given network using a modified Shannon diversity index that as demonstrated in [(Zitnik et al., 2019)](https://github.com/Unmani199/Network-Resilience/files/11356259/Evolution_of_PPIN_across_tree_of_life.pdf)  
+
+DESCRIBE THE FORMULA IN BRIEF  
+
 . Required packages include-  
 (pandas, networkx, random, plotly, math, scipy, os, statistics, ????? )   
 Compatible with Python version 3.8.8 and above  
