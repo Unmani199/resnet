@@ -2,19 +2,15 @@
 ---------
 Overview
 ---------
-Functional failure in essential pathways or proteins leads to the loss of biological function. Network resilience can quantify the interactome’s robustness to such random breakdowns. As dscribed in [(Zitnik et al., 2019)](https://www.pnas.org/doi/10.1073/pnas.1818013116), ResNet computes the graph resilience for any gene/protein or non-biological network.       
-The 2 functions measure and plot resilience of the given network using a modified Shannon diversity index that as demonstrated in 
-The networks are considered undirected and binary.  
-
-
-
+Functional failure in essential pathways or proteins leads to the loss of biological function. Network resilience can quantify the interactome’s robustness to such random breakdowns. As described in [(Zitnik et al., 2019)](https://www.pnas.org/doi/10.1073/pnas.1818013116), ResNet computes and plots the graph resilience for any gene/protein or non-biological network, also allowing users to remove nodes of their choice and view the resulting fragmented network. ResNet is written in Python.       
 
 -------------
-Prerequisites
+Dependencies
 -------------
-. Required packages include-  
-(pandas, networkx, random, plotly, math, scipy, os, statistics, ????? )   
-Compatible with Python version 3.8.8 and above  
+Required packages include-    
+pandas, os, statistics, numpy, plotly, networkx, random, math, scipy, timeit  
+Other requirements-  
+Compatible with Python version 3.8.8 and above    
 
 -------------
 Functions in ResNet
@@ -46,12 +42,14 @@ Functions in ResNet
 -----------------------
 File format/Preparation
 -----------------------
-
+The networks are considered undirected and binary.  
 
 
 -----------------------
 Examples- Input files & Parameters  
 -----------------------
+Input file = Network file
+Output files = Statistics Interactive Resilience plots
 
 
 
