@@ -11,8 +11,19 @@ Required packages include-
 pandas, os, statistics, numpy, plotly, networkx, random, math, scipy, timeit  
 (Code compatible with Python version 3.8.8. Higher or lower Python versions may cause discrepencies)  
 
+
+-----------------------
+Running ResNet- Input & Output Parameters  
+-----------------------
+Input file = Network file
+The networks are considered undirected and binary.
+
+Output files = Statistics files; Interactive Resilience plots
+
+
+
 -------------
-Functions in ResNet
+Description of Functions in ResNet
 -------------
 
 ### 1. modified_shannon_div  
@@ -36,32 +47,8 @@ Functions in ResNet
             (op_filename= prefix for the output .txt file);  
         output: (.txt file with size and proteins in fragmented network components)   
 
-
-
------------------------
-File format/Preparation
------------------------
-The networks are considered undirected and binary.  
-
-
------------------------
-Examples- Input files & Parameters  
------------------------
-Input file = Network file
-Output files = Statistics Interactive Resilience plots
-
-
-
 -------
 License
 -------
 See file 'LICENSE.md' for license. If you found our software useful in your analysis, we ask that you cite us as:
-
-
-
-
-
-
-
-
 
