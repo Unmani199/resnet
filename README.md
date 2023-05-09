@@ -2,8 +2,9 @@
 ---------
 Overview
 ---------
-WHAT ID RESILIENCE? DESCRIBE THE FORMULA IN BRIEF     
-The 2 functions measure and plot resilience of the given network using a modified Shannon diversity index that as demonstrated in [(Zitnik et al., 2019)](https://github.com/Unmani199/Network-Resilience/files/11356259/Evolution_of_PPIN_across_tree_of_life.pdf)  
+Functional failure in essential pathways or proteins leads to the loss of biological function. Network resilience can quantify the interactome’s robustness to such random breakdowns. As dscribed in [(Zitnik et al., 2019)](https://www.pnas.org/doi/10.1073/pnas.1818013116), ResNet computes the graph resilience for any gene/protein or non-biological network.       
+The 2 functions measure and plot resilience of the given network using a modified Shannon diversity index that as demonstrated in 
+The networks are considered undirected and binary.  
 
 
 
@@ -39,10 +40,6 @@ Functions in ResNet
             (removed_nodes_file= List of nodes to be removed in a .txt file, either single or all at once);
             (op_filename= prefix for the output .txt file);  
         output: (.txt file with size and proteins in fragmented network components)   
------------------------
-Parameters and Examples
------------------------
-
 
 
 
@@ -51,6 +48,10 @@ File format/Preparation
 -----------------------
 
 
+
+-----------------------
+Examples- Input files & Parameters  
+-----------------------
 
 
 
