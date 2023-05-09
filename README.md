@@ -4,6 +4,13 @@ Overview
 ---------
 Functional failure in essential pathways or proteins leads to the loss of biological function. Network resilience can quantify the interactome’s robustness to such random breakdowns. As described in [(Zitnik et al., 2019)](https://www.pnas.org/doi/10.1073/pnas.1818013116), ResNet computes and plots the graph resilience for any gene/protein or non-biological network, also allowing users to remove nodes of their choice and view the resulting fragmented network. ResNet is written in Python.       
 
+-----------------------
+Running ResNet    
+-----------------------
+Import [ResNet.py](link???) as a module within the Python interpreter of your choice and run the [functions](https://github.com/Unmani199/Network-Resilience/edit/main/README.md#description-of-functions-in-resnet). For convenience, make sure the dependent packages and [ResNet.py](link???) are on the same path. For example, install the dependencies (including ResNet) within the same [Conda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activate-env) when using Conda or in the same folder when using [JupyterLab](https://jupyter.org/install).       
+
+         from ResNet import *
+
 -------------
 Dependencies
 -------------
@@ -11,16 +18,15 @@ Required packages include-
 pandas, os, statistics, numpy, plotly, networkx, random, math, scipy, timeit  
 (Code compatible with Python version 3.8.8. Higher or lower Python versions may cause discrepencies)  
 
-
 -----------------------
-Running ResNet- Input & Output Parameters  
+Pipeline, I/O Files & Parameters  
 -----------------------
 Input file = Network file
 The networks are considered undirected and binary.
 
 Output files = Statistics files; Interactive Resilience plots
 
-
+-- DIAGRAM OF WORKFLOW -- and we're good  
 
 -------------
 Description of Functions in ResNet
