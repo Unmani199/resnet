@@ -9,8 +9,7 @@ Dependencies
 -------------
 Required packages include-    
 pandas, os, statistics, numpy, plotly, networkx, random, math, scipy, timeit  
-Other requirements-  
-Compatible with Python version 3.8.8 and above    
+(Code compatible with Python version 3.8.8. Higher or lower Python versions may cause discrepencies)  
 
 -------------
 Functions in ResNet
