@@ -29,7 +29,7 @@ Output files = Statistics files; Interactive Resilience plots
 -- DIAGRAM OF WORKFLOW -- and we're good  
 
 -------------
-Description of Functions in ResNet
+Description of Functions in ResNet  (The first 2 should be together)
 -------------
 
 ### 1. modified_shannon_div  
