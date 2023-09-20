@@ -26,7 +26,7 @@ The networks are considered undirected and binary.
 
 Output files = Statistics files; Interactive Resilience plots
 
--- DIAGRAM OF WORKFLOW -- and we're good  
+![ResNet workflow with three defining functions]()
 
 -------------
 Description of Functions in ResNet  (The first 2 should be together)
