@@ -54,7 +54,7 @@ Description of Functions in ResNet  (The first 2 should be together)
         output: (.txt file with size and proteins in fragmented network components)   
 
 -------
-License
+Cite us
 -------
-See file 'LICENSE.md' for license. If you found our software useful in your analysis, we ask that you cite us as:
-
+If you found our tool useful in your analysis, we ask that you cite us as:  
+_(Citation to be displayed soon as our publication is in the reviewing process)_
