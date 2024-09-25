@@ -7,7 +7,7 @@ Functional failure in essential pathways or proteins leads to the loss of biolog
 -----------------------
 Running ResNet    
 -----------------------
-Import [ResNet.py](link???) as a module within the Python interpreter of your choice and run the [functions](https://github.com/Unmani199/Network-Resilience/edit/main/README.md#description-of-functions-in-resnet). For convenience, make sure the dependent packages and [ResNet.py](link???) are on the same path. For example, install the dependencies (including ResNet) within the same [Conda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activate-env) when using Conda or in the same folder when using [JupyterLab](https://jupyter.org/install).       
+Import [ResNet.py]([link???](https://github.com/Unmani199/Network-Resilience/blob/main/ResNet.py)) as a module within the Python interpreter of your choice and run the [functions](https://github.com/Unmani199/Network-Resilience/edit/main/README.md#description-of-functions-in-resnet). For convenience, make sure the dependent packages and [ResNet.py](link???) are on the same path. For example, install the dependencies (including ResNet) within the same [Conda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activate-env) when using Conda or in the same folder when using [JupyterLab](https://jupyter.org/install).       
 
          from ResNet import *
 
