@@ -7,7 +7,7 @@ name = "resnet"
 description = "Measuring graph resilience or network robustness"
 
 # You can change this to README.md if you prefer.
-readme = "README.md"
+# readme = "README.md"
 
 # Put your own name and email address here. You can also add more authors.
 authors = [{name = "Unmani J", email = "unmani.jaygude@ucdconnect.ie"}]
