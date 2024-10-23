@@ -23,7 +23,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12"]
 
 # This is the minimum version of Python that pip will install your package on.
-requires-python = ">= 3.11.6"
+requires-python = ">= 3.11.5"
 
 # List your needed third-party libraries, if you have any.  "rich" is here as an
 # example.  Your list will be completely different.
