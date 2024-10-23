@@ -1,4 +1,5 @@
-from setuptools import setup
+from setuptools import setup, Command
+import os
 
 setup(
     name='resnet',
@@ -21,4 +22,23 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
     ],
+)
+
+
+class CleanCommand(Command):
+    """Custom clean command to tidy up the project root."""
+    user_options = []
+    def initialize_options(self):
+        pass
+    def finalize_options(self):
+        pass
+    def run(self):
+        os.system('rm -vrf ./build ./dist ./*.pyc ./*.tgz ./*.egg-info')
+
+# Further down when you call setup()
+setup(
+    # ... Other setup options
+    cmdclass={
+        'clean': CleanCommand,
+    }
 )
