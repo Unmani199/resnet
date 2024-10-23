@@ -1,0 +1,27 @@
+# GitHub CI build pipeline
+name: resnet CI build
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+    branches:
+      - master
+      - main
+jobs:
+  build:
+    runs-on: [ubuntu-latest, windows-latest]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up python 3.11.5
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.11.5
+    - name: Install dependencies
+      run: |
+        cd src
+        python -m pip install --upgrade pip
+        # pip install coverage
+        if  [ -f requirements.txt ]; then pip install -r requirements.txt; fi
