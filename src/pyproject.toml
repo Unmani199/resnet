@@ -52,5 +52,5 @@ dynamic = ["version"]
 version.attr = "resnet.__version__"
 
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools==68.2.2"]
 build-backend = "setuptools.build_meta"
