@@ -10,7 +10,7 @@ setup(
     author_email='unmani.jaygude@ucdconnect.ie',
     license='None',
     packages=['resnet'],
-    python_requires=">=3.6",
+    python_requires=">=3.11.6",
     install_requires=['pandas>=2.0.3','plotly>=5.9.0','networkx>=3.1'],
 
     classifiers=[
