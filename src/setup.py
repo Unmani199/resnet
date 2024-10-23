@@ -13,10 +13,8 @@ setup(
     install_requires=['pandas>=2.0.3','plotly>=5.9.0','networkx>=3.1'],
 
     classifiers=[
-        'Development Status :: 1 - Planning',
         'Intended Audience :: Science/Research',
-        'License :: None :: None',  
-        'Operating System :: POSIX :: Linux',        
+        'Operating System :: Linux',        
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
