@@ -8,7 +8,6 @@ setup(
     url='https://github.com/Unmani199/resnet.git',
     author='Unmani J',
     author_email='unmani.jaygude@ucdconnect.ie',
-    license='None',
     packages=['resnet'],
     python_requires=">=3.11.5",
     install_requires=['pandas>=2.0.3','plotly>=5.9.0','networkx>=3.1'],
