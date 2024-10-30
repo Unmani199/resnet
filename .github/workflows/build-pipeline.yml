@@ -27,9 +27,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install setuptools wheel
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Install package
+          pip install .
           
       - name: Build package
         run: |
+          pip install build
           python -m build
 
       - name: Archive package
