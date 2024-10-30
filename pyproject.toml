@@ -25,6 +25,5 @@ packages = ["resnet"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["resnet*"]
 
-[tool.setuptools.packages]
-find = {} 
