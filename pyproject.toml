@@ -1,42 +1,23 @@
-# This file configures the project for packaging, and can also hold other tools' configuration settings.
-# More details about what can go in this file:
-# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
-
 [project]
 name = "resnet"
 version = "0.0.1"
 description = "Measuring graph resilience or network robustness"
-
-# Put your own name and email address here. You can also add more authors.
 authors = [{name = "Unmani J", email = "unmani.jaygude@ucdconnect.ie"}]
-
-# Classifiers for your package. PyPI displays these on its page.
-# See https://pypi.org/classifiers/ for all of the possibilities.
 classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11"]
-
-# This is the minimum version of Python that pip will install your package on.
-requires-python = ">= 3.11.5"
-
-# List your needed third-party libraries, if you have any.  "rich" is here as an
-# example.  Your list will be completely different.
-dependencies = [ "plotly", "networkx", "scipy"]
-
-# # State that the version will be defined dynamically below.
-# dynamic = ["version"]
+    "Programming Language :: Python :: 3.11"
+]
+requires-python = ">=3.11.5"
+dependencies = ["plotly", "networkx", "scipy"]
 
 [project.urls]
-# These URLs are displayed in a sidebar on PyPI. You don't have to have them,
-# but they can help people learn more about your project. You can include as
-# many named URLs as you want.  They can be any URL, not just to GitHub.
 "Source code" = "https://github.com/Unmani199/resnet"
 
 [build-system]
-requires = ["setuptools==68.2.2","wheel"]
+requires = ["setuptools>=68.2.2", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
@@ -44,9 +25,3 @@ packages = ["resnet"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.setuptools.dynamic]
-# The version number will be read from __version__ in src/pkgsample/__init__.py
-version.attr = "resnet.__version__"
-
-
