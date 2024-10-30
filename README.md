@@ -19,6 +19,8 @@ Input files
 ---------
 Installing resnet
 ---------
+#### Using the module script   
+
 1. **Get [Conda](https://docs.conda.io/projects/conda/en/latest/index.html#)**    
 We recommend getting conda or any other python interpreter of you choice since resnet is written in Python. The [conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html#) can be helpful for installing the anaconda navigator depending on your device, viz., Windows, MacOS etc.
 
@@ -27,10 +29,25 @@ Once conda is installed successfully, open it and launch jupyterlab or jupyterla
 <img src="https://github.com/Unmani199/Network-Resilience/blob/main/Figures/Anaconda_Navigator.png" width=600 />      
 
 4. **Install dependencies**
-   * If you already have conda and _Python_ v3.11 or higher installed, skip the first two steps and install the dependent packages (see dependencies) using ``` pip install <package_name> ``` in your terminal/commandline or within your jupyterlab notebook.
-   * Import [resnet.py](https://github.com/Unmani199/Network-Resilience/blob/main/src/resnet/resnet.py) as a python module in your jupyterlab notebook as follows. If not jupterlab, you can do it using your choice of interpreter with the same command ``` from resnet_module import resnet ```. Note that the resnet_module.py file should be in the same directory/path as your input file, as seen in the notebook below. You can now use the resnet functions!   
+   * If you already have conda and _Python_ v3.11 or higher installed, skip the first two steps and install the dependent packages (see [dependencies](https://github.com/Unmani199/resnet/edit/main/README.md#dependencies)) using ``` pip install <package_name> ``` in your terminal/commandline or within your jupyterlab notebook.
+   * Import [resnet_module.py](https://github.com/Unmani199/Network-Resilience/blob/main/src/resnet/resnet_module.py) as a python module in your jupyterlab notebook as follows. If not jupterlab, you can do it using your choice of interpreter with the same command ``` from resnet_module import resnet ```. Note that the resnet_module.py file should be in the same directory/path as your input file, as seen in the notebook below. You can now use the resnet functions!   
 
-   <img src="https://github.com/Unmani199/Network-Resilience/blob/main/Figures/Install_Dependencies.png" width=700 />
+   <img src="https://github.com/Unmani199/Network-Resilience/blob/main/Figures/Install_Dependencies.png" width=700 />    
+
+#### Using pip   
+
+Alternatively, you can install resnet using pip in your command line (below). You will need to [install pip](https://www.partitionwizard.com/partitionmanager/install-pip.html#) if do not have it already.        
+
+         # Uninstall any previous versions   
+         pip uninstall resnet -y    
+         
+         # Install resnet   
+         pip install git+https://github.com/Unmani199/resnet.git    
+
+Post this, you can launch Python either within the same command line shell or through an jupyterlab/notebook using conda as dicussed above. This time, because the module is already installed, you can simply import it using Python as follows. You can now use the functions as described next!  
+      
+
+         from resnet import resnet     
 
 ---------
 Running resnet and Output 
