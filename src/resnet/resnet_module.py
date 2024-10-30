@@ -34,8 +34,8 @@ class resnet:
         # Set working dir to the network file's location
         os.chdir(os.path.dirname(os.path.abspath(network_file)))
         
-        # Read & display ip_file using pandas
-        df = pd.read_csv(ip_file, sep='s+', na_filter= False, engine='python')
+        # Read & display input network using pandas
+        df = pd.read_csv(network_file, sep='s+', na_filter= False, engine='python')
         # print('Your input file with edge pairs:\n', df)
         
         # Pandas dataframe --> edgelist [ (node1, node2), (node1, node3), ... ]
