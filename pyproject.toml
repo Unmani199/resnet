@@ -23,7 +23,7 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools]
 packages = ["resnet"]
 
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["resnet*"]
+# [tool.setuptools.packages.find]
+# where = ["src"]
+# include = ["resnet*"]
 
