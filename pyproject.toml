@@ -4,10 +4,8 @@
 
 [project]
 name = "resnet"
+version = "0.0.1"
 description = "Measuring graph resilience or network robustness"
-
-# You can change this to README.md if you prefer.
-# readme = "README.md"
 
 # Put your own name and email address here. You can also add more authors.
 authors = [{name = "Unmani J", email = "unmani.jaygude@ucdconnect.ie"}]
@@ -19,8 +17,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12"]
+    "Programming Language :: Python :: 3.11"]
 
 # This is the minimum version of Python that pip will install your package on.
 requires-python = ">= 3.11.5"
@@ -29,8 +26,8 @@ requires-python = ">= 3.11.5"
 # example.  Your list will be completely different.
 dependencies = [ "plotly", "networkx", "scipy"]
 
-# State that the version will be defined dynamically below.
-dynamic = ["version"]
+# # State that the version will be defined dynamically below.
+# dynamic = ["version"]
 
 [project.urls]
 # These URLs are displayed in a sidebar on PyPI. You don't have to have them,
@@ -38,13 +35,12 @@ dynamic = ["version"]
 # many named URLs as you want.  They can be any URL, not just to GitHub.
 "Source code" = "https://github.com/Unmani199/resnet"
 
-[project.scripts]
-# COMMANDS: These are commands you are installing.  Omit this section if you
-# have no commands.  The names of the settings are the command names.
-# The values are a string in the form "module.to.import:function_to_run".
+[build-system]
+requires = ["setuptools==68.2.2","wheel"]
+build-backend = "setuptools.build_meta"
 
-# The 'pkgsample_add' command will run the function add_main() in the src/pkgsample/add_cli.py file.
-# pkgsample_add = "pkgsample.add_cli:add_main"
+[tool.setuptools]
+packages = ["resnet"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -53,6 +49,4 @@ where = ["src"]
 # The version number will be read from __version__ in src/pkgsample/__init__.py
 version.attr = "resnet.__version__"
 
-[build-system]
-requires = ["setuptools==68.2.2"]
-build-backend = "setuptools.build_meta"
+
