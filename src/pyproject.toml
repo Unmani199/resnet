@@ -46,6 +46,8 @@ dynamic = ["version"]
 # The 'pkgsample_add' command will run the function add_main() in the src/pkgsample/add_cli.py file.
 # pkgsample_add = "pkgsample.add_cli:add_main"
 
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.setuptools.dynamic]
 # The version number will be read from __version__ in src/pkgsample/__init__.py
