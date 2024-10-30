@@ -28,7 +28,7 @@ Once conda is installed successfully, open it and launch jupyterlab or jupyterla
 
 4. **Install dependencies**
    * If you already have conda and _Python_ v3.11 or higher installed, skip the first two steps and install the dependent packages (see dependencies) using ``` pip install <package_name> ``` in your terminal/commandline or within your jupyterlab notebook.
-   * Import [resnet.py](https://github.com/Unmani199/Network-Resilience/blob/main/src/resnet/resnet.py) as a python module in your jupyterlab notebook as follows. If not jupterlab, you can do it using your choice of interpreter with the same command ``` from resnet import * ```. Note that the resnet.py file should be in the same directory/path as your input file, as seen in the notebook below. You can now use the resnet functions!   
+   * Import [resnet.py](https://github.com/Unmani199/Network-Resilience/blob/main/src/resnet/resnet.py) as a python module in your jupyterlab notebook as follows. If not jupterlab, you can do it using your choice of interpreter with the same command ``` from resnet_module import resnet ```. Note that the resnet_module.py file should be in the same directory/path as your input file, as seen in the notebook below. You can now use the resnet functions!   
 
    <img src="https://github.com/Unmani199/Network-Resilience/blob/main/Figures/Install_Dependencies.png" width=700 />
 
@@ -39,15 +39,15 @@ Output consist of stat files and interactive resilience plots depending on the f
 
 
 1. **modified_shannon_div**   
-   Here, **_op_stat_filename_** is the prefix for your output file. **_reps_** are the number of iterations/ repetitions to perform while the node removal; default is 5. **_bin_** can be'yes'/'no' with default='yes'. It is the choice of whether to bin the failure rates in 100 values to reduce run-time. The failure rate, _f_, ranges from 0 to 1, starting from removing 0 nodes to all _N_ nodes (0/N, 1/N, 2/N, .... N/N). If you don't want to bin (bin="no"), the count of failure rates _(f)_ will be equal to total Nodes (N) in the network, which can significantly increase the computing time.       
+   Here, **_op_stat_filename_** is the prefix for your output file. **_reps_** are the number of iterations/ repetitions to perform while the node removal; default is 5. **_binning_** can be'yes'/'no' with default='yes'. It is the choice of whether to bin the failure rates in 100 values to reduce run-time. The failure rate, _f_, ranges from 0 to 1, starting from removing 0 nodes to all _N_ nodes (0/N, 1/N, 2/N, .... N/N). If you don't want to bin (bin="no"), the count of failure rates _(f)_ will be equal to total Nodes (N) in the network, which can significantly increase the computing time.       
 
          # Input files
          network_file = "Davids network file.tsv"
          op_stat_filename = "Davids output"
 
          # Run the two functions 
-         modified_shannon_div(network_file, op_stat_filename, reps=50, binning= 100)
-         plots_stats_for_resilience(op_stat_filename, reps=5)
+         resnet.modified_shannon_div(network_file, op_stat_filename, reps=50, binning= 100)
+         resnet.plots_stats_for_resilience(op_stat_filename, reps=5)
 
    The output file in this case will be named _'Davids output_Resilience.txt'_ with failure rates coresponding to the Entropy values and other stats similar to below. This will be saved on the path to your current working directory.      
 ![Output](https://github.com/Unmani199/Network-Resilience/blob/main/Figures/Stat_OutputFile.png)     
@@ -60,10 +60,12 @@ Output consist of stat files and interactive resilience plots depending on the f
 
 5. **remove_ALL_selected_nodes**   
    This function allows users to remove the nodes of their interest instead of random attack.
+   
             # Input file with the list of nodes to be removed
             removed_nodes_file = "Selected nodes.txt"
 
-            remove_ALL_selected_nodes(network_file, removed_nodes_file, op_filename)
+            resnet.remove_ALL_selected_nodes(network_file, removed_nodes_file, op_filename)
+   
    The output file consists of components formed as a results of the node removal. For instance, from the example gene network, some nodes were removed to form the following components. The largest component, still intact, was of size 1877 nodes. Whereas, the removal resulted in fragmentation of the rest of singular nodes seen in the output file below.
    
    <img src="https://github.com/Unmani199/Network-Resilience/blob/main/Figures/Stat2_OutputFile.png" width=600 />   
