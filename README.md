@@ -29,7 +29,7 @@ Once conda is installed successfully, open it and launch jupyterlab or jupyterla
 <img src="https://github.com/Unmani199/Network-Resilience/blob/main/Figures/Anaconda_Navigator.png" width=600 />      
 
 4. **Install dependencies**
-   * If you already have conda and _Python_ v3.11 or higher installed, skip the first two steps and install the dependent packages (see [dependencies](https://github.com/Unmani199/resnet/edit/main/README.md#dependencies)) using ``` pip install <package_name> ``` in your terminal/commandline or within your jupyterlab notebook.
+   * If you already have conda and _Python_ v3.11 or higher installed, skip the first two steps and install the dependent packages (see [dependencies](https://github.com/Unmani199/resnet/blob/main/README.md#dependencies)) using ``` pip install <package_name> ``` in your terminal/commandline or within your jupyterlab notebook.
    * Import [resnet_module.py](https://github.com/Unmani199/Network-Resilience/blob/main/src/resnet/resnet_module.py) as a python module in your jupyterlab notebook as follows. If not jupterlab, you can do it using your choice of interpreter with the same command ``` from resnet_module import resnet ```. Note that the resnet_module.py file should be in the same directory/path as your input file, as seen in the notebook below. You can now use the resnet functions!   
 
    <img src="https://github.com/Unmani199/Network-Resilience/blob/main/Figures/Install_Dependencies.png" width=700 />    
